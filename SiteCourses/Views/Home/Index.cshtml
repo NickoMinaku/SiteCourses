@@ -1,8 +1,140 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-screen">
+    <header class="head">
+        <a class="logo" href="#"><img src="~/img/logo.svg" class="logo-shadow" />SweetVoice</a>
+        <nav>
+            <ol>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Курсы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ol>
+        </nav>
+        <a href="#">Войти<img class="profile_logo" src="~/img/profile_icon.svg"></a>
+    </header>
+    <div class="white-shine"></div>
+    <img class="main-screen-woman" src="~/img/main_screen_woman.png" />
+    <div class="offer">
+        <h1>То, что глупо говорить, следует петь!</h1>
+        <p>Учись вместе с нами в онлайн-школе вокала SweetVoice и запой как птичка в своём неповторимом стиле</p>
+        <a class="main-button" href="#">Сделать шаг к своей мечте!</a>
+    </div>
+    <div class="course-card"></div>
+    <div class="course-card"></div>
 </div>
+<main class="main-screen-content">
+    <h2>Почему мы?</h2>
+    <div class="triggers">
+        <div class="red_trigger">
+            <img src="~/img/smartphone-surfing.svg" />
+            <p>Мы - онлайн-школа и чтобы петь с нами не нужно ждать метро</p>
+        </div>
+        <div class="blue_trigger">
+            <img src="~/img/list_icon.svg" />
+            <p>Наш материал хорошо структурирован и подан максимально понятным языком</p>
+        </div>
+        <div class="purple_trigger">
+            <img src="~/img/studying_icon.svg" />
+            <p>Мы задаём высокую планку вашим будущим компетенциям и не оставим без хорошего наставника</p>
+        </div>
+	</div>
+</main>
+
+<div class="consultation_frame">
+    <img src="~/img/consultation_woman.png" />
+    <h2>
+        Нужна консультация?<br />
+        Пожалуйста, заполните форму
+    </h2>
+    <form class="consultation_form">
+        <input type="text" name="name" class="input_cons" placeholder="Ваше имя" />
+        <input type="text" name="phone_number" class="input_cons" placeholder="Ваш номер телефона" />
+        <input type="text" name="email" class="input_cons" placeholder="Ваша почта" />
+        <textarea type="text" name="disc_interest" class="input_cons" placeholder="Опишите, что вас интересует"></textarea>
+        <button class="sendform_button" id="sendform_button">Отправить форму</button>
+    </form>
+</div>
+<button href="#main-body" class="scroll_button">
+        <i></i>
+</button>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() > 250) {
+                    $(".scroll_button").addClass("show_scroll_button")
+                }
+                else{
+                    $(".scroll_button").removeClass("show_scroll_button")
+                }
+            })
+
+            var scrll_btn = $(".scroll_button")
+            scrll_btn.click(function(e){
+                e.preventDefault();
+                $("html, body").animate({scrollTop:0}, '300');
+            })
+
+            px_ratio = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+
+            $(".main-screen").css({ "width": `calc(100vw * ${px_ratio})`, "height": `calc(100vh * ${px_ratio})` });
+            $(".head").css({ "margin-left": `calc(19.529vw * ${px_ratio})`, "margin-top": `calc(5.857vh * ${px_ratio})`, "width": `calc(60.938vw * ${px_ratio})` });
+            $(".head .logo").css("margin-right", `calc(9.635vw * ${px_ratio})`);
+            $(".head .logo .logo-shadow").css("margin-right", `calc(1.042vw * ${px_ratio})`);
+            $(".profile_logo").css("margin-left", `calc(0.781vw * ${px_ratio})`);
+            $(".head nav ol li").css("margin-right", `calc(1.406vw * ${px_ratio})`);
+            $(".offer").css({ "left": `calc(19.531vw * ${px_ratio})`, "top": `calc(39.815vh * ${px_ratio})` });
+            $(".main-screen-woman").css({ "left": `calc(24.740vw * ${px_ratio} + 492px)`, "top": `calc(19.167vh * ${px_ratio} + 60px)` });
+            $(".white-shine").css({ "left": `calc(29.583vw * ${px_ratio} + 492px)`, "top": `calc(27.315vh * ${px_ratio} + 60px)` });
+            console.log($(".course-card").css("left"));
+            $(".course-card").hover(function () {
+                $(this).css("top", `calc(50.833vh * ${px_ratio} + 263px)`);
+            }, function () {
+                $(this).css("top", `calc(50.833vh * ${px_ratio} + 293px)`);
+            });
+            $(".course-card").css({ "left": `calc(19.740vw * ${px_ratio} + 302px`, "top": `calc(50.833vh * ${px_ratio} + 303px)` });
+            $(".course-card:last-child").css({ "left": `calc(19.740vw * ${px_ratio}`, "top": `calc(50.833vh * ${px_ratio} + 303px)` });
+            document.getElementsByClassName('main-body')[0].style.display = 'flex';
+            if (px_ratio > 1) {
+                $("body").css("overflow-x", "scroll");
+            } else {
+                $("body").css("overflow-x", "hidden");
+            }
+
+            $(window).resize(function () { isZooming(); });
+            function isZooming() {
+                var newPx_ratio = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+                if (newPx_ratio != px_ratio) {
+                    px_ratio = newPx_ratio;
+                    $(".main-screen").css({ "width": `calc(100vw * ${px_ratio})`, "height": `calc(100vh * ${px_ratio})` });
+                    $(".head").css({ "margin-left": `calc(19.529vw * ${px_ratio})`, "margin-top": `calc(5.857vh * ${px_ratio})`, "width": `calc(60.938vw * ${px_ratio})` });
+                    $(".head .logo").css("margin-right", `calc(9.635vw * ${px_ratio})`);
+                    $(".head .logo .logo-shadow").css("margin-right", `calc(1.042vw * ${px_ratio})`);
+                    $(".profile_logo").css("margin-left", `calc(0.781vw * ${px_ratio})`);
+                    $(".head nav ol li").css("margin-right", `calc(1.406vw * ${px_ratio})`);
+                    $(".offer").css({ "left": `calc(19.531vw * ${px_ratio})`, "top": `calc(39.815vh * ${px_ratio})` });
+                    $(".main-screen-woman").css({ "left": `calc(24.740vw * ${px_ratio} + 492px)`, "top": `calc(19.167vh * ${px_ratio} + 60px)` });
+                    $(".white-shine").css({ "left": `calc(29.583vw * ${px_ratio} + 492px)`, "top": `calc(27.315vh * ${px_ratio} + 60px)` });
+                    console.log($(".course-card").css("left"));
+                    $(".course-card").hover(function () {
+                        $(this).css("top", `calc(50.833vh * ${px_ratio} + 263px)`);
+                    }, function () {
+                        $(this).css("top", `calc(50.833vh * ${px_ratio} + 293px)`);
+                    });
+                    $(".course-card").css({ "left": `calc(19.740vw * ${px_ratio} + 302px`, "top": `calc(50.833vh * ${px_ratio} + 303px)` });
+                    $(".course-card:last-child").css({ "left": `calc(19.740vw * ${px_ratio}`, "top": `calc(50.833vh * ${px_ratio} + 303px)` });
+                    if (px_ratio > 1) {
+                        $("body").css("overflow-x", "auto");
+                    } else {
+                        $("body").css("overflow-x", "hidden");
+                    }
+                }
+            };
+        })
+
+    </script>
+}

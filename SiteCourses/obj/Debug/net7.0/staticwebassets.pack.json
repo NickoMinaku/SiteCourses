@@ -13,6 +13,50 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\Logo_vector.svg",
+      "PackagePath": "staticwebassets\\img\\Logo_vector.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\consultation_woman.png",
+      "PackagePath": "staticwebassets\\img\\consultation_woman.png"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\letter.svg",
+      "PackagePath": "staticwebassets\\img\\letter.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\list_icon.svg",
+      "PackagePath": "staticwebassets\\img\\list_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\main_screen_woman.png",
+      "PackagePath": "staticwebassets\\img\\main_screen_woman.png"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\phone.svg",
+      "PackagePath": "staticwebassets\\img\\phone.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\profile_icon.svg",
+      "PackagePath": "staticwebassets\\img\\profile_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\scroll_button_icon.svg",
+      "PackagePath": "staticwebassets\\img\\scroll_button_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\smartphone-surfing.svg",
+      "PackagePath": "staticwebassets\\img\\smartphone-surfing.svg"
+    },
+    {
+      "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\img\\studying_icon.svg",
+      "PackagePath": "staticwebassets\\img\\studying_icon.svg"
+    },
+    {
       "Id": "C:\\Users\\Никита\\source\\repos\\SiteCourses\\SiteCourses\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
