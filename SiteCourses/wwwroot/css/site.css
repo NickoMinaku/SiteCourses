@@ -435,3 +435,9 @@ h2 {
     align-items:center;
     justify-content:center;
 }
+
+.courses-bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(149.23deg, #F093FF 15.64%, #C86DFF 86%);
+}
