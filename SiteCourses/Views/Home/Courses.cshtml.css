@@ -1,0 +1,23 @@
+﻿.head a:last-child{
+    color: black;
+}
+
+.head nav ol li a{
+    color: black;
+}
+
+.head .logo{
+    color: black !important;
+}
+
+.head a:last-child{
+    color: black;
+}
+
+.head a:last-child:hover{
+    text-decoration-color: black;
+}
+
+.head nav ol li:first-child a {
+    text-decoration-color: rgba(0, 0, 0, 0.20);
+}

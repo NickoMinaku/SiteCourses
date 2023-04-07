@@ -446,9 +446,7 @@ h2 {
 }
 
 .courses-menu {
-    display: flex;
-    align-items: center;
-    padding: 33px 345px 0px 345px;
+    padding: 0px 345px 0px 345px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px 10px 0px 0px;
     position: absolute;
@@ -456,5 +454,25 @@ h2 {
     left: 1.563vw;
     width: 96.875vw;
     height: 87.963vh;
-    background-color: #CCD7FF;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hrborder {
+    top: calc(93.74px + 5.857vh);
+    left: 30px;
+    position: absolute;
+    color: rgba(219, 219, 219, 0.70) !important;
+    z-index: 1000;
+    margin: 0px;
+    opacity: 1;
+}
+
+.menu {
+    display: flex;
+    margin-top: calc(113.74px + 5.857vh - 2.778vh);
+    width: 60.938vw;
+    height: 74.444vh;
+    border: 1px solid rgba(219, 219, 219, 0.70);
+    border-radius: 10px 10px 0px 0px;
 }
