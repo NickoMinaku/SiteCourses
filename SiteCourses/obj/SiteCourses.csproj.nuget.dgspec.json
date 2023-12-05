@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NickoMinaku\\Desktop\\SiteCourses\\SiteCourses\\SiteCourses\\SiteCourses.csproj": {}
+    "C:\\Users\\NickoMinaku\\Desktop\\sc\\SiteCourses\\SiteCourses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NickoMinaku\\Desktop\\SiteCourses\\SiteCourses\\SiteCourses\\SiteCourses.csproj": {
+    "C:\\Users\\NickoMinaku\\Desktop\\sc\\SiteCourses\\SiteCourses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NickoMinaku\\Desktop\\SiteCourses\\SiteCourses\\SiteCourses\\SiteCourses.csproj",
+        "projectUniqueName": "C:\\Users\\NickoMinaku\\Desktop\\sc\\SiteCourses\\SiteCourses.csproj",
         "projectName": "SiteCourses",
-        "projectPath": "C:\\Users\\NickoMinaku\\Desktop\\SiteCourses\\SiteCourses\\SiteCourses\\SiteCourses.csproj",
+        "projectPath": "C:\\Users\\NickoMinaku\\Desktop\\sc\\SiteCourses\\SiteCourses.csproj",
         "packagesPath": "C:\\Users\\NickoMinaku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NickoMinaku\\Desktop\\SiteCourses\\SiteCourses\\SiteCourses\\obj\\",
+        "outputPath": "C:\\Users\\NickoMinaku\\Desktop\\sc\\SiteCourses\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.4, )"
